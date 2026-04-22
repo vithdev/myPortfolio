@@ -1,6 +1,6 @@
 import "./Project.css";
 
-import img1 from "../../assets/images/Cleveroad.jpg";
+import img1 from "../../assets/images/Cleveroad.png";
 import img2 from "../../assets/images/Capture d'écran 2025-10-22 182207.png";
 import img3 from "../../assets/images/Weather Forecast Dashboard.jpg";
 import img4 from "../../assets/images/WordPress dashboard design concept.jpg";
@@ -9,46 +9,46 @@ import img6 from "../../assets/images/Task manager app.jpg";
 
 const projects = [
   {
-    title: "E-Commerce Website",
+    title: "Royal Wedding Attire Website",
     img: img1,
-    desc: "Modern online store with product filtering, cart, and payment system.",
-    skills: ["HTML", "CSS", "JavaScript"]
-  },
-
-  {
-    title: "Portfolio Website",
-    img: img2,
-    desc: "Personal portfolio to showcase my design and coding projects.",
+    desc: "Long-sleeved silk shirts with traditional Khmer patterns, often worn tucked in or out depending on the specific ceremony.",
     skills: ["HTML", "CSS", "Bootstrap"]
   },
 
-  {
-    title: "Weather App",
-    img: img3,
-    desc: "Responsive app showing real-time weather data using API integration.",
-    skills: ["HTML", "CSS", "API"]
-  },
+  // {
+  //   title: "Portfolio Website",
+  //   img: img2,
+  //   desc: "Personal portfolio to showcase my design and coding projects.",
+  //   skills: ["HTML", "CSS", "Bootstrap"]
+  // },
 
-  {
-    title: "Blog Website",
-    img: img4,
-    desc: "Clean and simple blogging platform with markdown support.",
-    skills: ["HTML", "Tailwind", "JavaScript"]
-  },
+  // {
+  //   title: "Weather App",
+  //   img: img3,
+  //   desc: "Responsive app showing real-time weather data using API integration.",
+  //   skills: ["HTML", "CSS", "API"]
+  // },
 
-  {
-    title: "Game Landing Page",
-    img: img5,
-    desc: "Landing page for a game with animations and parallax effects.",
-    skills: ["HTML", "CSS", "GSAP"]
-  },
+  // {
+  //   title: "Blog Website",
+  //   img: img4,
+  //   desc: "Clean and simple blogging platform with markdown support.",
+  //   skills: ["HTML", "Tailwind", "JavaScript"]
+  // },
 
-  {
-    title: "Task Manager",
-    img: img6,
-    desc: "Task tracking web app with CRUD features and clean UI.",
-    skills: ["HTML", "CSS", "JS"]
-  }
+  // {
+  //   title: "Game Landing Page",
+  //   img: img5,
+  //   desc: "Landing page for a game with animations and parallax effects.",
+  //   skills: ["HTML", "CSS", "GSAP"]
+  // },
+
+  // {
+  //   title: "Task Manager",
+  //   img: img6,
+  //   desc: "Task tracking web app with CRUD features and clean UI.",
+  //   skills: ["HTML", "CSS", "JS"]
+  // }
 ];
 
 export default function Project() {
@@ -58,14 +58,14 @@ export default function Project() {
     <section className="project reveal" id="project">
 
       <div className="title">
-        <h2>Project</h2>
+        <h2 className="cursor-target">Project</h2>
       </div>
 
-      <div className="projects-container">
+      <div className="projects-container cursor-target">
 
         {projects.map((project, index) => (
 
-          <div className="project-card" key={index}>
+          <div className="project-card cursor-target" key={index}>
 
             <img src={project.img} alt={project.title} />
 
@@ -75,18 +75,18 @@ export default function Project() {
 
             <div className="skills">
               {project.skills.map((skill, i) => (
-                <a href="#" key={i}>{skill}</a>
+                <a href="#" className="cursor-target" key={i}>{skill}</a>
               ))}
             </div>
 
-            <div className="btns">
+            <div className="btns ">
 
-              <a href="#" className="btn">
+              <a href="https://github.com/Devith-wanglin/bootstrap5" className="btn cursor-target">
                 <i className="fab fa-github"></i> GitHub
               </a>
 
-              <a href="#" className="btn">
-                <i className="fas fa-external-link-alt"></i> Live Demo
+              <a href="https://bootstrap5-pi.vercel.app/" className="btn cursor-target">
+                <i className="fas fa-external-link-alt "></i> Live Demo
               </a>
 
             </div>

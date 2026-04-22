@@ -34,3 +34,52 @@
     transform:translateY(-4px) scale(1.2);
     color:white;
 }
+.footer {
+    margin-top: 80px;
+    padding: 20px 16px;
+    background: #111;
+    color: #aaa;
+}
+
+/* LAYOUT */
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ICONS */
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    font-size: 22px;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-4px) scale(1.2);
+    color: white;
+}
+
+/* ── MOBILE (≤ 600px) ── */
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 14px;
+        text-align: center;
+    }
+
+    .social-icons {
+        gap: 24px; /* ធំជាងបន្តិច ដើម្បីចុចងាយ */
+    }
+
+    .social-icons a {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,20 @@
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* offset សម្រាប់ fixed header */
+section,
+[id] {
+    scroll-margin-top: 80px; /* កែតាម height របស់ header */
+}

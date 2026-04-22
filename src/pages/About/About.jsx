@@ -10,7 +10,7 @@ function About() {
     <div className="about" id="about">
 
       <div className="title">
-        <h2>About Me</h2>
+        <h2 className="cursor-target">About Me</h2>
       </div>
 
       <div className="content">
@@ -25,13 +25,13 @@ function About() {
             {/* FRONT IMAGE */}
 
             <div className="photo-front">
-              <img src="img3.png" alt="" />
+              <img className="cursor-target" src="123.jpg" alt="" />
             </div>
 
             {/* BACK IMAGE */}
 
             <div className="photo-back">
-              <img src="img4.png" alt="" />
+              <img  src="img4.png"  alt="" />
             </div>
 
           </div>
@@ -39,8 +39,8 @@ function About() {
         </div>
 
         <div className="text-about">
-          <p>
-            Hi, I'm Amine, a passionate Frontend Developer and Computer Science student.
+          <p className="cursor-target fs-18"> 
+            Hi, I'm Devith!!, a passionate Frontend Developer and Computer Science student.
             I enjoy building modern, responsive, and interactive web interfaces that provide
             a great user experience. I focus on clean design, smooth animations, and writing
             efficient code using modern web technologies. I'm always learning new tools and

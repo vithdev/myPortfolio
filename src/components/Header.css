@@ -1,31 +1,30 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-  margin:0;
-  min-height:100vh;
-  background: radial-gradient(
-    circle at center,
-    #ffffff 0%,
-    #d0d0d0 25%,
-    #9d9d9d 50%,
-    #646464 70%,
-    #292929 90%,
-    #000000 100%
-  );
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(
+        circle at center,
+        #ffffff 0%,
+        #d0d0d0 25%,
+        #9d9d9d 50%,
+        #646464 70%,
+        #292929 90%,
+        #000000 100%
+    );
 }
 
 /* HEADER */
-
-.header{
+.header {
     position: fixed;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    z-index:1000;
+    z-index: 1000;
     width: 85%;
     padding: 14px 30px;
 
@@ -34,76 +33,136 @@ body{
     align-items: center;
 
     border-radius: 30px;
-    border:1px solid rgba(255,255,255,0.1);
-
-    background: rgba(20,20,20,0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(20, 20, 20, 0.4);
     backdrop-filter: blur(12px);
-
     transition: 0.4s;
 }
 
-/* Scroll Effect */
-
-.header.scroll{
-    background: rgba(15,15,15,0.75);
-    backdrop-filter: blur(16px);
+.header.scroll {
+    background: rgba(15, 15, 15, 0.5);
+    backdrop-filter: blur(1px);
 }
 
 /* LOGO */
-
-.logo h1{
-    color:#ddd;
-    letter-spacing:2px;
-    font-size:24px;
-    font-weight:600;
+.logo h1 {
+    color: #ddd;
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-weight: 600;
 }
 
-.logo h1 span{
-    color:#777777;
+.logo h1 span {
+    color: #777777;
 }
 
 /* LINKS */
-
-ul{
-    display:flex;
-    list-style:none;
-    gap:30px;
+ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
 }
 
-.links li a{
-    text-decoration:none;
-    color:#ccc;
-    font-size:17px;
-    font-weight:500;
-    transition:0.3s;
+.links li a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
-/* Hover */
-
-.links li a:hover{
-    color:#777777;
-    text-shadow:0 0 8px rgba(119,119,119,0.7);
+.links li a:hover {
+    color: #777777;
+    text-shadow: 0 0 8px rgba(119, 119, 119, 0.7);
 }
 
 /* ICONS */
-
-.icons{
-    display:flex;
-    gap:18px;
+.icons {
+    display: flex;
+    gap: 18px;
 }
 
-.icons li{
-    font-size:22px;
-    transition:0.3s;
+.icons li {
+    font-size: 22px;
+    transition: 0.3s;
 }
 
-.icons li a{
-    text-decoration:none;
-    color:#ccc;
+.icons li a {
+    text-decoration: none;
+    color: #ccc;
 }
 
-.icons li a:hover{
-    color:#777777;
-    transform:scale(1.15);
-    text-shadow:0 0 8px rgba(119,119,119,0.8);
+.icons li a:hover {
+    color: #777777;
+    text-shadow: 0 0 8px rgba(119, 119, 119, 0.8);
+}
+
+/* HAMBURGER BUTTON */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 4px;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #ccc;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Animate hamburger → X */
+.hamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+    .header {
+        top: 0;
+        width: 100%;
+        border-radius: 0;
+        padding: 14px 20px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hidden by default on mobile */
+    .links,
+    .icons {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 0 6px;
+        gap: 16px;
+    }
+
+    /* Show when menu is open */
+    .links.open,
+    .icons.open {
+        display: flex;
+    }
+
+    .icons {
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 12px;
+    }
 }

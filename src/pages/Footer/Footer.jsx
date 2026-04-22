@@ -13,9 +13,9 @@ function Footer(){
 
         <div className="social-icons">
 
-          <a href="#"><FaGithub/></a>
-          <a href="#"><FaLinkedin/></a>
-          <a href="#"><FaInstagram/></a>
+          <a href="https://github.com/vithdev"><FaGithub/></a>
+          <a href="https://www.linkedin.com/in/yann-undefined-78b517405/"><FaLinkedin/></a>
+          <a href="https://www.instagram.com/manyin0/?hl=en"><FaInstagram/></a>
 
         </div>
 
