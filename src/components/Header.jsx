@@ -38,17 +38,17 @@ function Header() {
             </button>
 
             <ul className={`links${menuOpen ? " open" : ""}`}>
-                <li><a href="#hero" onClick={handleLinkClick}>Home</a></li>
-                <li><a href="#about" onClick={handleLinkClick}>About</a></li>
-                <li><a href="#project" onClick={handleLinkClick}>Project</a></li>
-                <li><a href="#serv" onClick={handleLinkClick}>Services</a></li>
-                <li><a href="#contact" onClick={handleLinkClick}>Contact</a></li>
+                <li><a href="#hero" onClick={handleLinkClick} className="cursor-target">Home</a></li>
+                <li><a href="#about" onClick={handleLinkClick} className="cursor-target">About</a></li>
+                <li><a href="#project" onClick={handleLinkClick} className="cursor-target">Project</a></li>
+                <li><a href="#serv" onClick={handleLinkClick} className="cursor-target">Services</a></li>
+                <li><a href="#contact" onClick={handleLinkClick} className="cursor-target">Contact</a></li>
             </ul>
 
             <ul className={`icons${menuOpen ? " open" : ""}`}>
-                <li><a href="https://github.com/vithdev"><FontAwesomeIcon icon={faGithub} /></a></li>
-                <li><a href="https://www.instagram.com/manyin0/?hl=en"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                <li><a href="https://www.linkedin.com/in/yann-undefined-78b517405/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                <li><a className="cursor-target" href="https://github.com/vithdev"><FontAwesomeIcon  icon={faGithub} /></a></li>
+                <li><a className="cursor-target" href="https://www.instagram.com/manyin0/?hl=en"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                <li><a className="cursor-target" href="https://www.linkedin.com/in/yann-undefined-78b517405/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
             </ul>
         </header>
     )

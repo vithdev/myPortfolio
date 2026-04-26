@@ -1,0 +1,3 @@
+a[href*="unicorn.studio"] {
+  display: none !important;
+}

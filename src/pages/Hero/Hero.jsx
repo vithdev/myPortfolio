@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div className="hero" id="hero">
       <UnicornScene
-        projectId="h2Xbj7F0JuUSVj4UANnZ"
+        projectId="7C1jOcHWAvTwIEDwyppn"
         width="100%"
         height="900px"
         scale={1}
@@ -15,10 +15,13 @@ export default function Hero() {
       <div className="content">
         <h1 className="hero-title">Hi! I'm Devith</h1>
         <div className="buttn">
-          <a href="#" className="cursor-target">Contact</a>
-          <a href="#" className="cursor-target">Who i'm</a>
+          <a href="#contact" className="cursor-target">Contact</a>
+          <a href="#about" className="cursor-target">Who i'm</a>
         </div>
       </div>
     </div>
   );
 }
+
+
+
