@@ -7,7 +7,7 @@ function Services(){
     <div className="services" id="serv">
 
       <div className="title">
-        <h2 className="cursor-target">Services</h2>
+        <h2>Services</h2>
       </div>
 
       <div className="services-container cursor-target">
@@ -15,7 +15,7 @@ function Services(){
         <div className="service-card cursor-target">
           <FaCode className="service-icon"/>
           <h3>Frontend Development</h3>
-          <p>I build modern and interactive websites using React, HTML, CSS, JavaScript, Node.Js, Php, MySql and Next.js.</p>
+          <p>I build modern and interactive websites using React, HTML, CSS, JavaScript</p>
         </div>
 
         <div className="service-card cursor-target">
